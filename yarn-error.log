@@ -1,0 +1,68 @@
+Arguments: 
+  /usr/local/Cellar/node/10.10.0/bin/node /Users/icarroll/.local/share/virtualenvs/jupyterlab-volume-grX3uZHW/lib/python3.7/site-packages/jupyterlab/staging/yarn.js install
+
+PATH: 
+  /Users/icarroll/.local/share/virtualenvs/jupyterlab-volume-grX3uZHW/bin:/usr/local/Cellar/pipenv/2018.7.1/libexec/tools:/usr/local/opt/ruby/bin:/Users/icarroll/Library/Python/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/X11/bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  10.10.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/icarroll/support/jupyterlab-volume/package.json: Unexpected string in JSON at position 519
+      at JSON.parse (<anonymous>)
+      at /Users/icarroll/.local/share/virtualenvs/jupyterlab-volume-grX3uZHW/lib/python3.7/site-packages/jupyterlab/staging/yarn.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/Users/icarroll/.local/share/virtualenvs/jupyterlab-volume-grX3uZHW/lib/python3.7/site-packages/jupyterlab/staging/yarn.js:92:30)
+      at /Users/icarroll/.local/share/virtualenvs/jupyterlab-volume-grX3uZHW/lib/python3.7/site-packages/jupyterlab/staging/yarn.js:103:13
+
+npm manifest: 
+  {
+    "name": "jupyterlab-volume",
+    "version": "0.1.0",
+    "description": "Open a file browser pointing to a named volume.",
+    "keywords": [
+      "jupyter",
+      "jupyterlab",
+      "jupyterlab-extension"
+    ],
+    "license": "BSD-3-Clause",
+    "author": "Ian Carroll",
+    "files": [
+      "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+      "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+    ],
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "repository": {
+      "type": "git",
+      "url": """.git"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rimraf lib",
+      "watch": "tsc -w",
+      "prepare": "npm run clean && npm run build"
+    },
+    "dependencies": {
+      "@jupyterlab/application": "^0.18.0"
+    },
+    "devDependencies": {
+      "rimraf": "^2.6.1",
+      "typescript": "~2.9.2"
+    },
+    "jupyterlab": {
+      "extension": true
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
