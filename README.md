@@ -1,6 +1,6 @@
 # jupyterlab-volume
 
-Open a file browser pointing to a path available to ther server.
+The goal of this project is to open a file browser pointing to a path available to ther server. It does not do that, yet.
 
 ## To Do
 
